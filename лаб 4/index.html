@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лента новостей</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Лента новостей</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Действия</h2>
+        <p>
+          Можно показать все новости, вывести только новые, отсортировать записи,
+          посмотреть статистику и удалить отдельную новость.
+        </p>
+
+        <div class="buttons-row">
+          <button id="showAllBtn" type="button">Показать все</button>
+          <button id="showNewBtn" type="button">Показать NEW</button>
+          <button id="sortBtn" type="button">Сортировать по value ↓</button>
+          <button id="statsBtn" type="button">Показать статистику</button>
+          <button id="loadBtn" type="button">Загрузить данные</button>
+        </div>
+
+        <p id="domStatus">DOM работает</p>
+      </section>
+
+      <div class="content-layout">
+        <div class="main-column">
+          <section>
+            <h2>Добавить новость</h2>
+
+            <form id="recordForm">
+              <div>
+                <label for="titleInput">Название</label>
+                <input id="titleInput" name="title" placeholder="Название новости" />
+              </div>
+
+              <div>
+                <label for="valueInput">Value</label>
+                <input id="valueInput" name="value" placeholder="Например, 1500" />
+              </div>
+
+              <div>
+                <label for="statusInput">Статус</label>
+                <select id="statusInput" name="status">
+                  <option value="new">new</option>
+                  <option value="published">published</option>
+                  <option value="archived">archived</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="createdAtInput">Дата</label>
+                <input id="createdAtInput" name="createdAt" placeholder="YYYY-MM-DD" />
+              </div>
+
+              <button type="submit">Сохранить</button>
+            </form>
+
+            <div id="formErrors"></div>
+          </section>
+
+          <section>
+            <h2>Последние новости</h2>
+            <div id="list"></div>
+          </section>
+        </div>
+
+        <aside>
+          <h2>Демонстрация DOM</h2>
+          <ul id="domDemoList">
+            <li>Дем. строка 1</li>
+            <li>Дем. строка 2</li>
+            <li>Дем. строка 3</li>
+          </ul>
+        </aside>
+      </div>
+
+      <section>
+        <div id="message"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./data.js"></script>
+  <script src="./logic.js"></script>
+  <script src="./script.js"></script>
+  <script src="./practice-lr4.js"></script>
+</body>
+</html>
