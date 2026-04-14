@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лента новостей</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Лента новостей</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Действия</h2>
+        <p>Можно показать все новости, вывести только новые, отсортировать записи, посмотреть статистику и удалить отдельную новость.</p>
+        <div class="buttons-row">
+          <button id="btnAll">Показать все</button>
+          <button id="btnNew">Показать NEW</button>
+          <button id="btnSort">Сортировать по value ↓</button>
+          <button id="btnStats">Показать статистику</button>
+        </div>
+        <p id="message">DOM работает</p>
+      </section>
+
+      <div class="content-layout">
+        <div class="main-column">
+          <section>
+            <h2>Последние новости</h2>
+            <div id="list"></div>
+          </section>
+        </div>
+
+          <section>
+            <h2>Демонстрация DOM</h2>
+            <div id="demoList"></div>
+          </section>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <script src="practice-lr3.js"></script>
+  <script src="data.js"></script>
+  <script src="logic.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
