@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лента новостей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Лента новостей</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>Действия</h2>
+                <p>Можно посмотреть количество новостей, скрыть\показать категории и очистить строку</p>
+                <div class="buttons-row">
+                    <button id="countBtn">Показать количество новостей</button>
+                    <button id="toggleBtn">Скрыть категории</button>
+                    <button id="clearBtn">Очистить строку</button>
+                </div>
+                <p id="result">Нажмите кнопку для выполнения действия.</p>
+            </section>
+
+            <div class="content-layout">
+                <div class="main-column">
+                    <section>
+                        <h2>Последние новости</h2>
+
+                        <article>
+                            <h3>Новость</h3>
+                            <p>Новость</p>
+                        </article>
+
+                        <article>
+                            <h3>Новость</h3>
+                            <p>Новость</p>
+                        </article>
+
+                        <article>
+                            <h3>Новость</h3>
+                            <p>Новость</p>
+                        </article>
+                    </section>
+                </div>
+
+                <aside class="side-column">
+                    <section>
+                        <h2>Категории новостей</h2>
+                        <ul id="categoryList">
+                            <li>Общество</li>
+                            <li>Спорт</li>
+                            <li>Культура</li>
+                            <li>Транспорт</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Архив и поиск</h2>
+                        <p>Фильтрация, поиск и просмотр полного списка новостей будут реализованы в следующих лабораторных работах.</p>
+                    </section>
+                </aside>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
